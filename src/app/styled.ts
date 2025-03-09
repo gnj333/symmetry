@@ -2,14 +2,15 @@ import styled from "@emotion/styled";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalBackground = styled.div`
-  background-color: #232121;
-  height: 100vh;
+  height: 100%;
+  background: white;
+  width: 100%;
 `;
 
 export const GlobalWrapper = styled.div`
   max-width: 1440px;
   margin: 0 auto;
-  height: 100%;
+  width: 75%;
 `;
 
 export const GlobalStyle = createGlobalStyle`
@@ -41,11 +42,13 @@ export const GlobalStyle = createGlobalStyle`
 
     html {
         height: 100vh;
+        zoom: 0.75
     }
 
     body {
         line-height: 1;
         height: 100vh;
+
     }
 
     ol, ul {
@@ -59,7 +62,6 @@ export const GlobalStyle = createGlobalStyle`
     blockquote:before, blockquote:after,
     q:before, q:after {
         content: '';
-        content: none;
     }
 
     table {
@@ -69,6 +71,11 @@ export const GlobalStyle = createGlobalStyle`
 
     * {
         box-sizing: border-box;
-        font-family: "Roboto", sans-serif;
+        font-family: "Raleway", sans-serif;
 
+    }
+
+    a {
+        text-decoration: none;
+        color: black
     }`;
