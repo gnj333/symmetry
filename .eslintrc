@@ -1,151 +1,20 @@
 {
-  "plugins": [
-    "react-hooks",
-    "@typescript-eslint",
-    "simple-import-sort",
-    "prettier"
-  ],
   "extends": [
     "eslint:recommended",
-    "plugin:prettier/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 10,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true,
-      "modules": true
-    }
-  },
-  "ignorePatterns": [
-    "scripts/**/*",
-    "webpack/**/*",
-    "src/shared/types/**/*"
-  ],
-  "env": {
-    "es6": true,
-    "node": true,
-    "browser": true,
-    "jest": true
+    "ecmaVersion": 2021,
+    "sourceType": "module"
   },
   "rules": {
-    "react/jsx-max-props-per-line": [
-      2,
-      {
-        "maximum": 1,
-        "when": "multiline"
-      }
-    ],
-    "react/jsx-first-prop-new-line": [
-      2,
-      "multiline"
-    ],
-    "arrow-body-style": "error",
-    "@typescript-eslint/indent": "off",
-    "react/jsx-curly-brace-presence": "error",
-    "import/no-unused-modules": "warn",
-    "import/namespace": "off",
-    "import/named": "off",
-    "no-unused-vars": "off",
-    "react/prop-types": "off",
-    "import/no-unresolved": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react/display-name": "off",
-    "react-hooks/exhaustive-deps": "off",
     "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "newline-before-return": "error",
-    "@typescript-eslint/no-explicit-any": "warn",
-    "@typescript-eslint/unified-signatures": "error",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/prefer-interface": "off",
+    "react/display-name": "off",
     "@typescript-eslint/ban-ts-ignore": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
-    "@typescript-eslint/no-misused-new": "off",
-    "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "warn",
-      {
-        "argsIgnorePattern": "^_",
-        "varsIgnorePattern": "^_",
-        "caughtErrorsIgnorePattern": "^_"
-      }
-    ],
-    "no-console": "warn",
-    "prettier/prettier": [
-      "error",
-      {
-        "printWidth": 130,
-        "tabWidth": 2,
-        "semi": true,
-        "singleQuote": true,
-        "endOfLine": "auto",
-        "arrowParens": "always",
-        "jsxSingleQuote": true
-      }
-    ],
-    "simple-import-sort/imports": [
-      "error",
-      {
-        "groups": [
-          [
-            "^react",
-            "^effector",
-            "^atomic",
-            "@sentry",
-            "dayjs"
-          ],
-          [
-            "^shared",
-            "^entities",
-            "^features",
-            "^widgets",
-            "^pages",
-            "^app"
-          ],
-          [
-            // all the rest
-            "^\\w",
-            // ../
-            "^\\.\\.(?!/?$)",
-            "^\\.\\./?$",
-            // ./
-            "^\\./(?=.*/)(?!/?$)",
-            "^\\.(?!/?$)",
-            "^\\./?$"
-          ],
-          [
-            "^mui"
-          ]
-        ]
-      }
-    ]
+    "no-constant-binary-expression": "off"
   },
-  "settings": {
-    "react": {
-      "version": "detect"
-    },
-    "import/resolver": {
-      "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
-      }
-    }
-  },
-  "globals": {
-    "jest": true,
-    "it": true,
-    "expect": true,
-    "shallow": true
-  }
+  "plugins": [
+    "react"
+  ]
 }
