@@ -1,12 +1,14 @@
 import { GlobalBackground, GlobalStyle, GlobalWrapper } from "./styled";
-import { Header } from "../widgets/header/Header";
+import { lazy } from "react";
+
+const Router = lazy(() => import("./Router"));
 
 function App() {
   return (
     <GlobalBackground>
       <GlobalWrapper>
         <GlobalStyle />
-        <Header />
+        <Router />
       </GlobalWrapper>
     </GlobalBackground>
   );

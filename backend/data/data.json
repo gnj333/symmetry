@@ -1,0 +1,412 @@
+{
+  "cart": [],
+  "products": [
+    {
+      "name": "худи “classicalH”",
+      "image": "/icons/item(1).jpg",
+      "price": 4900,
+      "slug": "classicalH",
+      "sizes": [
+        "xs",
+        "s",
+        "m",
+        "l",
+        "xl",
+        "xxl"
+      ],
+      "materials": [
+        {
+          "name": "хлопок",
+          "percentage": "85%"
+        },
+        {
+          "name": "полиэстер",
+          "percentage": "10%"
+        },
+        {
+          "name": "эластан",
+          "percentage": "5%"
+        }
+      ],
+      "description": "классическое худи с необычным box фитом",
+      "recommendations": [
+        {
+          "name": "бейсболка “classicalC”",
+          "image": "/icons/negr.jpg",
+          "price": 2350,
+          "oldPrice": 2900,
+          "slug": "classicalC",
+          "sizes": [
+            "s",
+            "m",
+            "l"
+          ],
+          "materials": [
+            {
+              "name": "хлопок",
+              "percentage": "50%"
+            },
+            {
+              "name": "полиэстер",
+              "percentage": "30%"
+            },
+            {
+              "name": "нейлон",
+              "percentage": "20%"
+            }
+          ],
+          "description": "стильная бейсболка для защиты от солнца"
+        },
+        {
+          "name": "зип-худи “classicalZH”",
+          "image": "/icons/item(3).jpg",
+          "price": 5000,
+          "slug": "classicalZH",
+          "sizes": [
+            "xs",
+            "s",
+            "m",
+            "l",
+            "xl"
+          ],
+          "materials": [
+            {
+              "name": "флис",
+              "percentage": "60%"
+            },
+            {
+              "name": "хлопок",
+              "percentage": "30%"
+            },
+            {
+              "name": "полиэстер",
+              "percentage": "10%"
+            }
+          ],
+          "description": "тёплое зип-худи с мягким флисовым утеплением"
+        }
+      ],
+      "id": "8495"
+    },
+    {
+      "name": "штаны “classicalP”",
+      "image": "/icons/item(4).jpg",
+      "price": 4000,
+      "slug": "classicalP",
+      "sizes": [
+        "42",
+        "44",
+        "46",
+        "48",
+        "50"
+      ],
+      "materials": [
+        {
+          "name": "хлопок",
+          "percentage": "70%"
+        },
+        {
+          "name": "лён",
+          "percentage": "20%"
+        },
+        {
+          "name": "полиэстер",
+          "percentage": "10%"
+        }
+      ],
+      "description": "классические брюки для повседневной носки",
+      "recommendations": [
+        {
+          "name": "худи “classicalH”",
+          "image": "/icons/item(1).jpg",
+          "price": 4900,
+          "slug": "classicalH",
+          "sizes": [
+            "xs",
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+          ],
+          "materials": [
+            {
+              "name": "хлопок",
+              "percentage": "85%"
+            },
+            {
+              "name": "полиэстер",
+              "percentage": "10%"
+            },
+            {
+              "name": "эластан",
+              "percentage": "5%"
+            }
+          ]
+        },
+        {
+          "name": "бейсболка “classicalC”",
+          "image": "/icons/negr.jpg",
+          "price": 2350,
+          "oldPrice": 2900,
+          "slug": "classicalC",
+          "sizes": [
+            "s",
+            "m",
+            "l"
+          ],
+          "materials": [
+            {
+              "name": "хлопок",
+              "percentage": "50%"
+            },
+            {
+              "name": "полиэстер",
+              "percentage": "30%"
+            },
+            {
+              "name": "нейлон",
+              "percentage": "20%"
+            }
+          ],
+          "description": "стильная бейсболка для защиты от солнца"
+        }
+      ],
+      "id": "fc45"
+    },
+    {
+      "name": "зип-худи “classicalZH”",
+      "image": "/icons/item(3).jpg",
+      "price": 5000,
+      "slug": "classicalZH",
+      "sizes": [
+        "xs",
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
+      "materials": [
+        {
+          "name": "флис",
+          "percentage": "60%"
+        },
+        {
+          "name": "хлопок",
+          "percentage": "30%"
+        },
+        {
+          "name": "полиэстер",
+          "percentage": "10%"
+        }
+      ],
+      "description": "тёплое зип-худи с мягким флисовым утеплением",
+      "recommendations": [
+        {
+          "name": "футболка “classicalT”",
+          "image": "/icons/item(2).jpg",
+          "price": 3000,
+          "slug": "classicalT",
+          "sizes": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+          ],
+          "materials": [
+            {
+              "name": "хлопок",
+              "percentage": "100%"
+            }
+          ],
+          "description": "дышащая футболка из 100% хлопка"
+        },
+        {
+          "name": "бейсболка “classicalC”",
+          "image": "/icons/negr.jpg",
+          "price": 2350,
+          "oldPrice": 2900,
+          "slug": "classicalC",
+          "sizes": [
+            "s",
+            "m",
+            "l"
+          ],
+          "materials": [
+            {
+              "name": "хлопок",
+              "percentage": "50%"
+            },
+            {
+              "name": "полиэстер",
+              "percentage": "30%"
+            },
+            {
+              "name": "нейлон",
+              "percentage": "20%"
+            }
+          ],
+          "description": "стильная бейсболка для защиты от солнца"
+        }
+      ],
+      "id": "3f4a"
+    },
+    {
+      "name": "футболка “classicalT”",
+      "image": "/icons/item(2).jpg",
+      "price": 3000,
+      "slug": "classicalT",
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl",
+        "xxl"
+      ],
+      "materials": [
+        {
+          "name": "хлопок",
+          "percentage": "100%"
+        }
+      ],
+      "description": "дышащая футболка из 100% хлопка",
+      "recommendations": [
+        {
+          "name": "бейсболка “classicalC”",
+          "image": "/icons/negr.jpg",
+          "price": 2350,
+          "oldPrice": 2900,
+          "slug": "classicalC",
+          "sizes": [
+            "s",
+            "m",
+            "l"
+          ],
+          "materials": [
+            {
+              "name": "хлопок",
+              "percentage": "50%"
+            },
+            {
+              "name": "полиэстер",
+              "percentage": "30%"
+            },
+            {
+              "name": "нейлон",
+              "percentage": "20%"
+            }
+          ],
+          "description": "стильная бейсболка для защиты от солнца"
+        },
+        {
+          "name": "штаны “classicalP”",
+          "image": "/icons/item(4).jpg",
+          "price": 4000,
+          "slug": "classicalP",
+          "sizes": [
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          "materials": [
+            {
+              "name": "хлопок",
+              "percentage": "70%"
+            },
+            {
+              "name": "лён",
+              "percentage": "20%"
+            },
+            {
+              "name": "полиэстер",
+              "percentage": "10%"
+            }
+          ],
+          "description": "классические брюки для повседневной носки"
+        }
+      ],
+      "id": "9bf2"
+    },
+    {
+      "name": "бейсболка “classicalC”",
+      "image": "/icons/negr.jpg",
+      "price": 2350,
+      "oldPrice": 2900,
+      "slug": "classicalC",
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
+      "materials": [
+        {
+          "name": "хлопок",
+          "percentage": "50%"
+        },
+        {
+          "name": "полиэстер",
+          "percentage": "30%"
+        },
+        {
+          "name": "нейлон",
+          "percentage": "20%"
+        }
+      ],
+      "description": "стильная бейсболка для защиты от солнца",
+      "recommendations": [
+        {
+          "name": "футболка “classicalT”",
+          "image": "/icons/item(2).jpg",
+          "price": 3000,
+          "slug": "classicalT",
+          "sizes": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+          ],
+          "materials": [
+            {
+              "name": "хлопок",
+              "percentage": "100%"
+            }
+          ],
+          "description": "дышащая футболка из 100% хлопка"
+        },
+        {
+          "name": "зип-худи “classicalZH”",
+          "image": "/icons/item(3).jpg",
+          "price": 5000,
+          "slug": "classicalZH",
+          "sizes": [
+            "xs",
+            "s",
+            "m",
+            "l",
+            "xl"
+          ],
+          "materials": [
+            {
+              "name": "флис",
+              "percentage": "60%"
+            },
+            {
+              "name": "хлопок",
+              "percentage": "30%"
+            },
+            {
+              "name": "полиэстер",
+              "percentage": "10%"
+            }
+          ],
+          "description": "тёплое зип-худи с мягким флисовым утеплением"
+        }
+      ],
+      "id": "ae2a"
+    }
+  ]
+}
