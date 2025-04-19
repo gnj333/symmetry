@@ -42,7 +42,7 @@ export const GlobalStyle = createGlobalStyle`
 
     html {
         height: 100vh;
-        zoom: 0.75
+        zoom: 0.75;
     }
 
     body {

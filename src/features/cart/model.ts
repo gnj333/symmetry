@@ -1,6 +1,12 @@
 import { createGate } from "effector-react";
 import { createEvent, restore, sample } from "effector";
-import { deleteFromCartFx, getCartFx } from "../../shared/api";
+import {
+  clearCartFx,
+  deleteFromCartFx,
+  getCartFx,
+  sendCheckoutFx,
+} from "../../shared/api";
+import { notifyFromEffect } from "../../shared/ui/notifier";
 
 export const CartGate = createGate();
 
@@ -16,4 +22,17 @@ export const deleteCartItem = createEvent<number>();
 sample({
   clock: deleteCartItem,
   target: deleteFromCartFx,
+});
+
+notifyFromEffect({
+  effect: sendCheckoutFx,
+  $isActive: CartGate.status,
+  success: "Спасибо за заказ, мы с Вами свяжемся!",
+  isNeedRedirect: true,
+  isNeedRedirectFromSuccess: true,
+});
+
+sample({
+  clock: sendCheckoutFx.doneData,
+  target: clearCartFx,
 });

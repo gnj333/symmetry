@@ -1,5 +1,6 @@
 import { GlobalBackground, GlobalStyle, GlobalWrapper } from "./styled";
 import { lazy } from "react";
+import { NotificationsProvider } from "../shared/ui/notifier";
 
 const Router = lazy(() => import("./Router"));
 
@@ -8,7 +9,9 @@ function App() {
     <GlobalBackground>
       <GlobalWrapper>
         <GlobalStyle />
-        <Router />
+        <NotificationsProvider>
+          <Router />
+        </NotificationsProvider>
       </GlobalWrapper>
     </GlobalBackground>
   );

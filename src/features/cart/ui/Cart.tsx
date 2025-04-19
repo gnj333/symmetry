@@ -11,6 +11,8 @@ import { useGate, useUnit } from "effector-react";
 import { $cart, CartGate } from "../model";
 import { CartItem } from "./CartItem";
 import { animated, useTransition } from "react-spring";
+import { Form } from "../../calibrationForm/ui/Form";
+import { Product } from "../../../shared/api";
 
 export const CartFilling = () => {
   useGate(CartGate);
@@ -24,6 +26,11 @@ export const CartFilling = () => {
     leave: { transform: "translateX(100%)", opacity: 0 },
     config: { duration: 500 },
   });
+
+  const calculateTotalPrice = (products: Product[] | null) => {
+    if (products)
+      return products.reduce((sum, product) => sum + product.price, 0);
+  };
   return (
     <CartWrapper>
       <NavigateWrapper isNeedBorderBottom>
@@ -49,6 +56,7 @@ export const CartFilling = () => {
           </animated.div>
         ))
       )}
+      {!!cart?.length && <Form total={calculateTotalPrice(cart)} />}
     </CartWrapper>
   );
 };
