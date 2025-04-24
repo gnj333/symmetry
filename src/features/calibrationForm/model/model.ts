@@ -24,3 +24,14 @@ sample({
   },
   target: sendCheckoutFx,
 });
+
+export const scrollToTop = createEvent();
+
+scrollToTop.watch(() => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+sample({
+  clock: sendCheckoutFx.doneData,
+  target: scrollToTop,
+});

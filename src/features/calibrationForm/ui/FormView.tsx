@@ -13,7 +13,6 @@ import { FormPhoneInput } from "../../../shared/ui/Inputs/FormPhoneInput";
 import { sendCheckoutFx } from "../../../shared/api";
 import { useUnit } from "effector-react";
 import { Spinner } from "../../../shared/ui/spinner/Spinner";
-import { scrollToSymmetry } from "../../../shared/refs/Refs";
 
 type Props = {
   total?: number;
@@ -59,13 +58,7 @@ export const FormView = ({ total }: Props) => {
           <FormInput name={"email"} placeholder={"Введите ваш Email"} />
         </FormCategory>
         <ButtonWrapper>
-          {!isLoading ? (
-            <Button type="submit" onClick={() => scrollToSymmetry()}>
-              заказать
-            </Button>
-          ) : (
-            <Spinner />
-          )}
+          {!isLoading ? <Button type="submit">заказать</Button> : <Spinner />}
           <TotalPrice>
             <Total>итого</Total>
             {total} руб
