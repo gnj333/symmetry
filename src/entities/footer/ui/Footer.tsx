@@ -7,8 +7,6 @@ import {
   ParagraphWrapper,
   Politic,
   PoliticWrapper,
-  SubTitle,
-  SubtitlesWrapper,
   Title,
   Wrapper,
 } from "./styled";
@@ -31,13 +29,6 @@ export const Footer = () => (
           <RouterLink to={mainPageRoute}>
             <Title onClick={scrollToCatalog}>КАТАЛОГ</Title>
           </RouterLink>
-          <SubtitlesWrapper>
-            <SubTitle>футболки</SubTitle>
-            <SubTitle>худи</SubTitle>
-            <SubTitle>свитшоты</SubTitle>
-            <SubTitle>бейсболки</SubTitle>
-            <SubTitle>шапки</SubTitle>
-          </SubtitlesWrapper>
         </ParagraphWrapper>
         <div>
           <RouterLink to={mainPageRoute}>
